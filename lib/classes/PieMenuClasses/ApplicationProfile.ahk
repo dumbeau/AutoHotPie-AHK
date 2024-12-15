@@ -1,4 +1,4 @@
-class AppProfile {
+class ApplicationProfile {
 	__New(ApplicationProfileSettings, _autoHotPie:=""){
 		ObjMerge(this, ApplicationProfileSettings)
 		this.__Parent := &_autoHotPie
@@ -13,7 +13,7 @@ class AppProfile {
 			GroupAdd, regApps, % fullAHKHandle
 			GroupAdd, % this.group.name, % fullAHKHandle					
 		}
-		this.getHotkeyGroupContext()
+		this.getHotkeyGroupContext()		
 		
 		this.profileToggle := ObjMerge(new this.ProfileToggle(), this) ;May not need parent passed through
 

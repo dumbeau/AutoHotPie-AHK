@@ -5,7 +5,7 @@ class PieMenu {
 		this.pieItems := []
 		if (this.enabled){
 			boundPressFunc := this.press.Bind(this)					
-			boundReleaseFunc := this.release.Bind(this)			
+			boundReleaseFunc := this.release.Bind(this)				
 			Hotkey, % this.hotkey.ahkKey, % boundPressFunc
 			Hotkey, % StripModifierCharacters(this.hotkey.ahkKey) . " up", % boundReleaseFunc
 			if(this.appProfile.autoHotPie.escapeKeyCancelEnabled){

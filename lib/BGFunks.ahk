@@ -19,7 +19,7 @@ ValidateFontFamily(fontFamily){
 	SetUpGDIP(0, 0, 0, 0)
 	StartDrawGDIP()	
 	verifyTextString := Ceil(StrSplit(Gdip_TextToGraphics(G, "TestWQMq|", "x20 y20 Center vCenter c00FFFFFF r4 s20", fontFamily),"|")[3])
-	msgbox, % verifyTextString
+	; msgbox, % verifyTextString
 	If (verifyTextString < 2){
 		sleep, 200
 		; Reload  App needs to remember it has been reloaded.
